@@ -1,9 +1,6 @@
 body {
   background-color: black;
-  
 }
-
-
 
 span {
   color: rgb(194, 30, 86);
@@ -13,7 +10,7 @@ span {
   margin-top: 40vh;
 
   margin-left: 20vw;
-  
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,22 +18,18 @@ span {
 
 .shortintro p {
   color: white;
- 
+
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
-  font-size: 40px;
- 
+  font-size: 2rem;
 }
 .shortintro img {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 20vh;
-  margin-bottom: 3vh;
-  height: 500px;
-  width: 300px;
+  margin: 20vh 5vw 3vh 5vw; 
+  height: 50vh;
+  width: auto;
   border-radius: 15px;
- 
 }
+
 
 .fixed-img {
   position: fixed;
@@ -60,19 +53,150 @@ span {
   margin-left: 5vw;
 }
 
-
-
 .about {
   background-color: rgb(8, 8, 8);
 
- 
   font-family: "Rethink Sans", sans-serif;
- 
+
   margin-top: 40vh;
 
   display: flex;
   flex-direction: row;
- 
+}
+
+.portfolio,
+.contact {
+  background-color: rgb(8, 8, 8);
+
+  font-family: "Rethink Sans", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  /* background-color: red; */
+  padding-bottom: 5vh;
+}
+.portfolio h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Rethink Sans", sans-serif;
+  margin-left: 5vw;
+  margin-top: 15vh;
+}
+.contact h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.contact-me img {
+  height: 24px;
+  width: 24px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 5vw;
+
+  row-gap: 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 5vw;
+
+  row-gap: 5px;
+}
+
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 5vw;
+
+  row-gap: 15px;
+  margin-top: 5vh;
+  
+  
+}
+
+.contact-form input{
+  height: 5vh;
+  width: 50vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  background-color: #272627;
+  font-size: large;
+  color:white;
+}
+.contact-form textarea{
+  height: 15vh;
+  width: 50vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+   background-color: #272627;
+  font-size: large;
+  max-width: 50vw;
+  min-width: 50vw;
+  color: white;
+  font-family: "Rethink Sans", sans-serif
+  
+}
+.contact-form button{
+  height: 5vh;
+  width: 10vw;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  background-color: rgb(194, 30, 86);
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.mail,
+.phone,
+.social,
+.resume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: white;
+  gap: 20px;
+  font-size: 20px;
+}
+.resume a {
+  /* width: auto;
+  height: auto; */
+  font-size: large;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  /* margin-left: 50px; */
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.portfolio p {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Rethink Sans", sans-serif;
+  margin-left: 30vw;
+  margin-top: 50vh;
 }
 
 .about img {
@@ -84,11 +208,18 @@ span {
   width: 300px;
   border-radius: 15px;
 }
+.social img {
+  height: 35px;
+  width: 40px;
+  margin-right: 10px;
+  background-color: transparent;
+  margin-top: 3vh;
+  border-radius: 5px;
+}
 .tabs {
   display: flex;
   flex-direction: column;
   align-items: left;
- 
 }
 
 .all-tabs {
@@ -128,87 +259,60 @@ span {
   color: rgb(194, 30, 86);
 }
 
-/* .tab-contents{
+.tabs.tab-contents {
   margin-left: 5vw;
-} */
-.tabs.tab-contents  {
- 
-  margin-left: 5vw;
- 
+
   color: rgb(192, 188, 188);
   font-size: 30px;
 }
 
 .tab-contents p {
   font-size: 20px;
-
-  
 }
 
-.tab-content{
+.tab-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 100px;
 }
 
-.tab-content.cert img{
+.cert-div img {
   max-width: 48px;
   max-height: 48px;
-  border-radius: 0px;
-  margin-right: 10px;
-  
-  
+  border-radius: 5px;
+  margin-right: 5px;
 }
-
-.tab-content.cert a{
+.tab-content.cert a {
   width: auto;
   height: auto;
   font-size: large;
   border-radius: 20px;
   padding: 5px 10px;
-  margin-left:50px;
+  margin-left: 50px;
   background-color: white;
   color: black;
   text-decoration: none;
- 
 }
 
-/* .tab-content.cert {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-  
-  
-  margin-left: 0vw;
-} */
-.cert-div{
+.cert-div {
   max-width: 60vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin-top: 2px; */
+
   justify-content: space-between;
-  
-  
-  
- 
 }
 
-.tab-content{
+.tab-content {
   display: flex;
   flex-direction: column;
   align-items: left;
-  gap:10px;
+  gap: 10px;
 }
 
-.tab-content.cert{
+.tab-content.cert {
   display: flex;
   flex-direction: column;
-
- 
-  
-
 }
 
 .home-btn,
@@ -227,6 +331,7 @@ span {
   margin-top: 30px;
   margin-right: 50px;
   background-color: transparent;
+  transition: transform 0.5s;
 }
 
 .home-btn:hover,
@@ -235,6 +340,8 @@ span {
 .contact-btn:hover,
 .tab:hover {
   color: rgb(194, 30, 86);
+  transform:translate(0, -5px);
+  
 }
 
 .top-card {
