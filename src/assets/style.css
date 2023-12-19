@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #f4f4f4;
 }
 
 span {
@@ -7,58 +7,65 @@ span {
 }
 
 .shortintro {
-  margin-top: 40vh;
-
-  margin-left: 20vw;
+  width: 100%;
+  height: 100vh;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-}
+  gap: 30vh;
 
-.shortintro p {
-  color: white;
+  /* border: 5px solid black; */
+}
+.top-card {
+  display: flex;
+
+  grid-gap: 40vw;
+}
+.about-me {
+  color: black;
 
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
   font-size: 2rem;
 }
+
 .shortintro img {
-  margin: 20vh 5vw 3vh 5vw; 
-  height: 50vh;
-  width: auto;
-  border-radius: 15px;
-}
-
-
-.fixed-img {
+  margin: 20vh 5vw 3vh 5vw;
   position: fixed;
   top: 10vh;
   left: 60vw;
   z-index: -1;
+  border-radius: 15px;
+  height: 50vh;
+  width: auto;
 }
 .job {
-  color: white;
-  font-size: 20px;
-  font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 30px;
+  font-family: "Rethink Sans", sans-serif;
 }
 
 .name {
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 40px;
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
-  font-size: 40px;
+
   margin-left: 5vw;
+
+  background-color: transparent;
+  transition: transform 0.5s;
+}
+.name:hover {
+  color: rgb(194, 30, 86);
+  transform: translate(0, -10px);
 }
 
 .about {
-  background-color: rgb(8, 8, 8);
+  background-color: #e4e8eb;
 
   font-family: "Rethink Sans", sans-serif;
-
-  margin-top: 40vh;
 
   display: flex;
   flex-direction: row;
@@ -66,7 +73,7 @@ span {
 
 .portfolio,
 .contact {
-  background-color: rgb(8, 8, 8);
+  background-color: #e4e8eb;
 
   font-family: "Rethink Sans", sans-serif;
 
@@ -75,11 +82,10 @@ span {
 }
 
 .contact {
-  /* background-color: red; */
   padding-bottom: 5vh;
 }
 .portfolio h1 {
-  color: white;
+  color: black;
   font-size: 50px;
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
@@ -87,7 +93,7 @@ span {
   margin-top: 15vh;
 }
 .contact h1 {
-  color: white;
+  color: black;
   font-size: 50px;
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
@@ -116,7 +122,7 @@ span {
   row-gap: 5px;
 }
 
-.contact-form form{
+.contact-form form {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -124,11 +130,9 @@ span {
 
   row-gap: 15px;
   margin-top: 5vh;
-  
-  
 }
 
-.contact-form input{
+.contact-form input {
   height: 5vh;
   width: 50vw;
   border-radius: 5px;
@@ -136,33 +140,33 @@ span {
   padding-left: 10px;
   background-color: #272627;
   font-size: large;
-  color:white;
+  color: white;
 }
-.contact-form textarea{
+.contact-form textarea {
   height: 15vh;
   width: 50vw;
   border-radius: 5px;
   border: none;
   padding-left: 10px;
-   background-color: #272627;
+  background-color: #272627;
   font-size: large;
   max-width: 50vw;
   min-width: 50vw;
   color: white;
-  font-family: "Rethink Sans", sans-serif
-  
+  font-family: "Rethink Sans", sans-serif;
 }
-.contact-form button{
+.contact-form button {
   height: 5vh;
   width: 10vw;
   border-radius: 5px;
   border: none;
   padding-left: 10px;
   background-color: rgb(194, 30, 86);
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
+  font-weight: bold;
 }
 
 .mail,
@@ -173,7 +177,7 @@ span {
   flex-direction: row;
   align-items: center;
 
-  color: white;
+  color: black;
   gap: 20px;
   font-size: 20px;
 }
@@ -185,13 +189,13 @@ span {
   padding: 5px 10px;
 
   /* margin-left: 50px; */
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration: none;
 }
 
 .portfolio p {
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
@@ -199,15 +203,6 @@ span {
   margin-top: 50vh;
 }
 
-.about img {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  height: 500px;
-  width: 300px;
-  border-radius: 15px;
-}
 .social img {
   height: 35px;
   width: 40px;
@@ -232,7 +227,7 @@ span {
   margin: 10px 0;
   font-size: 25px;
   margin-left: 5vw;
-  color: rgb(192, 188, 188);
+  color: black;
   background-color: transparent;
   border: none;
 }
@@ -240,7 +235,7 @@ span {
 .tabs h1 {
   font-size: 40px;
   margin-left: 5vw;
-  color: rgb(192, 188, 188);
+  color: black;
   background-color: transparent;
   border: none;
 }
@@ -248,10 +243,10 @@ span {
 .tabs p {
   font-size: 20px;
   margin-left: 5vw;
-  color: rgb(192, 188, 188);
+  color: black;
   background-color: transparent;
   border: none;
-  max-width: 50vw;
+  /* max-width: 50vw; */
   font-weight: 100;
 }
 
@@ -289,13 +284,13 @@ span {
   border-radius: 20px;
   padding: 5px 10px;
   margin-left: 50px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration: none;
 }
 
 .cert-div {
-  max-width: 60vw;
+  max-width: 80vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -313,6 +308,7 @@ span {
 .tab-content.cert {
   display: flex;
   flex-direction: column;
+  margin-left: 5vw;
 }
 
 .home-btn,
@@ -323,7 +319,7 @@ span {
   font-weight: lighter;
   font-family: "Rethink Sans", sans-serif;
 
-  color: white;
+  color: black;
   background-color: red;
   border: none;
   height: 60px;
@@ -340,13 +336,137 @@ span {
 .contact-btn:hover,
 .tab:hover {
   color: rgb(194, 30, 86);
-  transform:translate(0, -5px);
-  
+  transform: translate(0, -5px);
 }
 
-.top-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 100px;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
+.navigation a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* @media screen and (max-width: 768px) {
+  .name {
+    font-size: 30px;
+    margin-left: 2vw;
+  }
+
+  .shortintro {
+    margin-top: 10vh;
+    margin-left: 0vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 5px solid black;
+  }
+  .job {
+    font-size: 1rem;
+  }
+
+  .shortintro p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .shortintro img {
+    margin: 5vh 0;
+    position: relative;
+    width: 150px;
+    height: 249.52px;
+    border-radius: 10px;
+  }
+
+  .about,
+  .portfolio,
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-left: 0;
+    margin-top: 10vh;
+    text-align: center;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 5vh;
+  }
+
+  .contact-form form,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .tabs h1,
+  .tabs p,
+  .tab-content p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tab {
+    margin: 10px 0;
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .tab-content {
+    align-items: center;
+    gap: 5px;
+  }
+
+  .cert-div img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .tab-content.cert a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .navigation {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navigation a {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .home-btn:hover,
+  .about-btn:hover,
+  .portfolio-btn:hover,
+  .contact-btn:hover,
+  .tab:hover {
+    transform: translate(0, -3px);
+  }
+} */
